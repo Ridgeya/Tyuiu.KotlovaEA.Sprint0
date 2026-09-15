@@ -1,26 +1,28 @@
-﻿using Tyuiu.KotlovaEA.Sprint0.Task6.V1.Lib;
+﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
+using System;
+using Tyuiu.KotlovaEA.Sprint0.Task6.V1.Lib;
 namespace Tyuiu.KotlovaEA.Sprint0.Task6.V1.Test
 {
     [TestClass]
-    public sealed class DataServiceTest
+    public class DataServiceTest
     {
         [TestMethod]
         public void CheckAdditionArrayValid()
         {
-            var numbers = new int[] { 1, 2, 3, 4, 5 };
-            var res = DataService.AdditionArray(numbers);
+            var numbrs = new int[] { 1, 2, 3, 4, 5 };
+            var res = DataService.AdditionArray(numbrs);
             Assert.AreEqual(15, res);
         }
-        public void CheckSubstractionArrayValid()
+        public void CheckASubtractionArrayValid()
         {
-            var numbers = new int[] { 1, 2, 3, 4, 5 };
-            var res = DataService.SubtractionArray(numbers);
+            var numbrs = new int[] { 1, 2, 3, 4, 5 };
+            var res = DataService.AdditionArray(numbrs);
             Assert.AreEqual(-15, res);
         }
-        public void CheckMultArrayValid()
+        public void CheckMultiplicationArrayValid()
         {
-            var numbers = new int[] { 1, 2, 3, 4, 5 };
-            var res = DataService.MultiplicationArray(numbers);
+            var numbrs = new int[] { 1, 2, 3, 4, 5 };
+            var res = DataService.AdditionArray(numbrs);
             Assert.AreEqual(120, res);
         }
     }
