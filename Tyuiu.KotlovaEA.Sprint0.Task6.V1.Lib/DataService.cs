@@ -10,7 +10,7 @@ namespace Tyuiu.KotlovaEA.Sprint0.Task6.V1.Lib
     {
         public static object AdditionArray(int[] numbers)
         {
-            var total = 1;
+            var total = 0;
             for (var i = 0; i < numbers.Length; i++)
             {
                 total = total + numbers[i];
